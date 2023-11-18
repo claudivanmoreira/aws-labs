@@ -1,0 +1,10 @@
+services:
+  app:
+    container_name: spring-aws # Define o nome do container a ser exebido no `docker ps`
+    build:
+      context: . # Define o diretorio base em que o CLI do docker vai executar
+      dockerfile: docker/Dockerfile # Define o caminho do arquivo Dockerfile
+    ports:
+      - "8080:7001" #Redireciona as requests na porta 8080 local para a porta 7001 do container
+    environment:
+      SERVER_PORT: 7001 #Porta a ser usada pelo Spring Boot para executar o tomcat
