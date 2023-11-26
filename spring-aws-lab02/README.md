@@ -46,25 +46,24 @@ Na raiz do projeto, pelo terminal executar os seguintes comandos:
 
 ## Resultado
 
-1. Infra estrutura em execução:
+#### 1. Infra estrutura em execução
 
-- Containers Docker
+- Containers Docker em execução
 
 ![evidencia](https://github.com/claudivanmoreira/aws-labs/blob/main/spring-aws-lab02/src/test/resources/containers.PNG?raw=true)
 
-
-- Logs nginx
+- Logs do nginx
 
 ![evidencia](https://github.com/claudivanmoreira/aws-labs/blob/main/spring-aws-lab02/src/test/resources/nginx_https.PNG?raw=true)
 
-- Logs backend
+- Logs do backend
 
 ![evidencia](https://github.com/claudivanmoreira/aws-labs/blob/main/spring-aws-lab02/src/test/resources/spring_https.PNG?raw=true)
 
-2. Redirecionamento para porta HTTPS do nginx:
+#### 2. Redirecionamento para porta HTTPS do nginx
 
 ![evidencia](https://github.com/claudivanmoreira/aws-labs/blob/main/spring-aws-lab02/src/test/resources/nginx_https_redirect.PNG?raw=true)
 
-3. Loadbalancer em ação
+#### 3. Loadbalancer em ação
 
 ![evidencia](https://github.com/claudivanmoreira/aws-labs/blob/main/spring-aws-lab02/src/test/resources/loadbalancer.gif?raw=true)
