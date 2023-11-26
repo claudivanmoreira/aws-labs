@@ -46,7 +46,7 @@ Na raiz do projeto, pelo terminal executar os seguintes comandos:
 
 ## Resultado
 
-### 1. Infra estrutura em execução
+### 1. Infraestrutura em execução
 
 - Containers Docker em execução
 
