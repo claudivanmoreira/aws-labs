@@ -42,7 +42,7 @@ Na raiz do projeto, pelo terminal executar os seguintes comandos:
 
 ## Testes
 
-1. Acessar no navegador o endereço `http://localhost:80/echo`
+1. Acessar no navegador o endereço [http://localhost:80/echo](http://localhost:80/echo)
 
 ## Resultado
 
@@ -60,7 +60,7 @@ Na raiz do projeto, pelo terminal executar os seguintes comandos:
 
 ![evidencia](https://github.com/claudivanmoreira/aws-labs/blob/main/spring-aws-lab02/src/test/resources/spring_https.PNG?raw=true)
 
-### 2. Redirecionamento para porta HTTPS do nginx
+### 2. Redirecionamento para porta HTTPS do nginx ao acessar a URL [http://localhost:80/echo](http://localhost:80/echo)
 
 ![evidencia](https://github.com/claudivanmoreira/aws-labs/blob/main/spring-aws-lab02/src/test/resources/nginx_https_redirect.PNG?raw=true)
 
