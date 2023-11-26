@@ -27,7 +27,7 @@ instância do serviço que recebeu a request.
 - Configurar balanceamento de carga entre as instâncias do backend
 - Criar um `Dockerfile` que construa a imagem Docker do nginx com todas as configurações e arquivos necessários.
 
-#### Configuração
+#### Infraestrutura
 
 - Criar um `docker-compose` que suba 2 instâncias do backend e 1 instância do nginx
 - Ao acessar a porta não segura do nginx em `http://localhost:80/echo` a request deve ser redirecionada para `https://localhost/echo`
