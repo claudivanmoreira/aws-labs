@@ -10,7 +10,7 @@ Exemplo:
 
 ## Requisitos
 
-### Aplicação
+#### Aplicação
  
 - Criar um projeto Gradle + Kotlin + Spring Boot
 - Gerar certificado HTTPS auto-assinado.
@@ -19,7 +19,7 @@ Exemplo:
 instância do serviço que recebeu a request.
 - Criar um `Dockerfile` que construa a imagem Docker do projeto.
 
-### Nginx
+#### Nginx
 
 - Gerar um certificado HTTPS auto-assinado.
 - Configurar utilização de certificado HTTPS.
@@ -27,7 +27,7 @@ instância do serviço que recebeu a request.
 - Configurar balanceamento de carga entre as instâncias do backend
 - Criar um `Dockerfile` que construa a imagem Docker do nginx com todas as configurações e arquivos necessários.
 
-### Configuração
+#### Configuração
 
 - Criar um `docker-compose` que suba 2 instâncias do backend e 1 instância do nginx
 - Ao acessar a porta não segura do nginx em `http://localhost:80/echo` a request deve ser redirecionada para `https://localhost/echo`
@@ -37,8 +37,8 @@ instância do serviço que recebeu a request.
 
 Na raiz do projeto, pelo terminal executar os seguintes comandos:
 
-- Build do projeto: `./gradlew docker-build`
-- Deploy no container docker: `./gradlew docker-run`
+- Containerização do projeto: `./gradlew docker-build`
+- Deploy no docker: `./gradlew docker-run`
 
 ## Testes
 
@@ -46,7 +46,7 @@ Na raiz do projeto, pelo terminal executar os seguintes comandos:
 
 ## Resultado
 
-#### 1. Infra estrutura em execução
+### 1. Infra estrutura em execução
 
 - Containers Docker em execução
 
@@ -60,10 +60,10 @@ Na raiz do projeto, pelo terminal executar os seguintes comandos:
 
 ![evidencia](https://github.com/claudivanmoreira/aws-labs/blob/main/spring-aws-lab02/src/test/resources/spring_https.PNG?raw=true)
 
-#### 2. Redirecionamento para porta HTTPS do nginx
+### 2. Redirecionamento para porta HTTPS do nginx
 
 ![evidencia](https://github.com/claudivanmoreira/aws-labs/blob/main/spring-aws-lab02/src/test/resources/nginx_https_redirect.PNG?raw=true)
 
-#### 3. Loadbalancer em ação
+### 3. Loadbalancer em ação
 
 ![evidencia](https://github.com/claudivanmoreira/aws-labs/blob/main/spring-aws-lab02/src/test/resources/loadbalancer.gif?raw=true)
