@@ -63,7 +63,7 @@ Na raiz do projeto, pelo terminal executar os seguintes comandos:
 
 2. Redirecionamento para porta HTTPS do nginx:
 
-![evidencia](https://github.com/claudivanmoreira/aws-labs/blob/main/spring-aws-lab02/src/test/resources/nginx_https_redirect.PNGG?raw=true)
+![evidencia](https://github.com/claudivanmoreira/aws-labs/blob/main/spring-aws-lab02/src/test/resources/nginx_https_redirect.PNG?raw=true)
 
 3. Loadbalancer em ação
 
