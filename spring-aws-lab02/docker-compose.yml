@@ -1,0 +1,40 @@
+services:
+
+  backend01:
+    container_name: backend01
+    build: ./docker/app
+    image: lab-springboot:v1
+    entrypoint: ./docker-entrypoint.sh
+    ports:
+      - '7000:8080'
+      - '7001:8433'
+    environment:
+      SERVER_PORT: 8433
+      INSTANCE_NAME: backend01
+
+  backend02:
+    container_name: backend02
+    build: ./docker/app
+    image: lab-springboot:v1
+    entrypoint: ./docker-entrypoint.sh
+    ports:
+      - '8000:8080'
+      - '8001:8433'
+    environment:
+      SERVER_PORT: 8433
+      INSTANCE_NAME: backend02
+
+  nginx:
+    container_name: nginx
+    build: ./docker/nginx
+    image: lab-nginx:v1
+    ports:
+      - '80:80'
+      - '443:443'
+    depends_on:
+      - backend01
+      - backend02
+
+#  nginx:
+#    container_name: nginx
+#    image: nginx:1.25.3-alpine

@@ -1,0 +1,9 @@
+server:
+  ssl:
+    #key-store: classpath:keystore/springboot_backup.p12
+    key-store: ${JAVA_HOME}/lib/security/springboot.p12
+    key-store-password: changeit
+    key-store-type: pkcs12
+    key-alias: springboot
+    key-password: changeit
+  port: 8443
